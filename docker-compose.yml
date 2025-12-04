@@ -1,0 +1,27 @@
+services:
+  linear:
+    tty: true
+    stdin_open: true
+    image: '593357294110.dkr.ecr.eu-west-1.amazonaws.com/linear:${DOCKER_TAG:-main}'
+    platform: linux/amd64
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - "8888:8888"
+    command:
+      - sh
+      - -lc
+      - >
+        uv sync &&
+        uv run -- python -m notebook
+        --ip=0.0.0.0
+        --port=8888
+        --no-browser
+        --allow-root
+        --IdentityProvider.token=''
+        --ServerApp.password=''
+
+networks:
+  default:
+    name: tbg_development
+    external: true
