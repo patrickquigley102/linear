@@ -1,6 +1,11 @@
 # Linear Regression
 
-Build my own Linear Regression.
+Learn about Linear Regression and ML.
+
+## Overview
+
+- src/exercise1
+  - Build my own LR model, compare to scikit-learn with very simple data.
 
 ## Setup
 
