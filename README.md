@@ -9,6 +9,7 @@ Learn about Linear Regression and ML.
 - src/exercise2
   - [This Kaggle course](https://www.kaggle.com/code/ryanholbrook/linear-regression-with-time-series/tutorial) from Ryan Holbrook.
   - You need to download the data from [here](https://www.kaggle.com/code/ryanholbrook/linear-regression-with-time-series/data) and add it to `data/exercise2`. If you wish to run the code again.
+  - One notebook per course stage.
 
 ## Setup
 
